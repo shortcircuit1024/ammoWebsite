@@ -24894,7 +24894,7 @@
 	        ),
 	        React.createElement(
 	            IndexLink,
-	            { to: '/', className: 'nav-item', style: { color: '#FFFFFF' }, activeClassName: 'nav-item active', activeStyle: {
+	            { to: '/', className: 'nav-item', style: { fontSize: '115%', color: '#FFFFFF' }, activeClassName: 'nav-item active', activeStyle: {
 	                    color: '#F59B45'
 	                } },
 	            'Home'
@@ -24906,7 +24906,7 @@
 	        ),
 	        React.createElement(
 	            IndexLink,
-	            { to: '/scheduler', className: 'nav-item', style: { color: '#FFFFFF' }, activeClassName: 'nav-item active', activeStyle: {
+	            { to: '/scheduler', className: 'nav-item', style: { fontSize: '115%', color: '#FFFFFF' }, activeClassName: 'nav-item active', activeStyle: {
 	                    color: '#F59B45'
 	                } },
 	            'Scheduler'
@@ -24918,7 +24918,7 @@
 	        ),
 	        React.createElement(
 	            IndexLink,
-	            { to: '/floatila', className: 'nav-item', style: { color: '#FFFFFF' }, activeClassName: 'nav-item active', activeStyle: {
+	            { to: '/floatila', className: 'nav-item', style: { fontSize: '115%', color: '#FFFFFF' }, activeClassName: 'nav-item active', activeStyle: {
 	                    color: '#F59B45'
 	                } },
 	            'Solo Flotilia'
@@ -24930,7 +24930,7 @@
 	        ),
 	        React.createElement(
 	            IndexLink,
-	            { to: '/fleet', className: 'nav-item', style: { color: '#FFFFFF' }, activeClassName: 'nav-item active', activeStyle: {
+	            { to: '/fleet', className: 'nav-item', style: { fontSize: '115%', color: '#FFFFFF' }, activeClassName: 'nav-item active', activeStyle: {
 	                    color: '#F59B45'
 	                } },
 	            'Main Fleet'
@@ -24942,7 +24942,7 @@
 	        ),
 	        React.createElement(
 	            IndexLink,
-	            { to: '/profile', className: 'nav-item', style: { color: '#FFFFFF' }, activeClassName: 'nav-item active', activeStyle: {
+	            { to: '/profile', className: 'nav-item', style: { fontSize: '115%', color: '#FFFFFF' }, activeClassName: 'nav-item active', activeStyle: {
 	                    color: '#F59B45'
 	                } },
 	            'Profile'
