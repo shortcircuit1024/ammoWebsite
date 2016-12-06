@@ -24885,16 +24885,21 @@
 	var Nav = function Nav() {
 	    return React.createElement(
 	        'nav',
-	        { className: 'navbar navbar-dark bg-inverse', style: { fontFamily: 'Electrolize' } },
+	        { className: 'navbar navbar-full navbar-dark bg-inverse', style: {
+	                fontFamily: 'Electrolize'
+	            } },
 	        React.createElement('img', { src: '/assets/favicon_v3.png', width: '30', height: '30', alt: '' }),
 	        React.createElement(
 	            'span',
 	            null,
-	            '   '
+	            '    '
 	        ),
 	        React.createElement(
 	            IndexLink,
-	            { to: '/', className: 'nav-item', style: { fontSize: '115%', color: '#FFFFFF' }, activeClassName: 'nav-item active', activeStyle: {
+	            { to: '/', className: 'nav-item', style: {
+	                    fontSize: '115%',
+	                    color: '#FFFFFF'
+	                }, activeClassName: 'nav-item active', activeStyle: {
 	                    color: '#F59B45'
 	                } },
 	            'Home'
@@ -24902,11 +24907,14 @@
 	        React.createElement(
 	            'span',
 	            null,
-	            '   '
+	            '    '
 	        ),
 	        React.createElement(
 	            IndexLink,
-	            { to: '/scheduler', className: 'nav-item', style: { fontSize: '115%', color: '#FFFFFF' }, activeClassName: 'nav-item active', activeStyle: {
+	            { to: '/scheduler', className: 'nav-item', style: {
+	                    fontSize: '115%',
+	                    color: '#FFFFFF'
+	                }, activeClassName: 'nav-item active', activeStyle: {
 	                    color: '#F59B45'
 	                } },
 	            'Scheduler'
@@ -24914,11 +24922,14 @@
 	        React.createElement(
 	            'span',
 	            null,
-	            '   '
+	            '    '
 	        ),
 	        React.createElement(
 	            IndexLink,
-	            { to: '/floatila', className: 'nav-item', style: { fontSize: '115%', color: '#FFFFFF' }, activeClassName: 'nav-item active', activeStyle: {
+	            { to: '/floatila', className: 'nav-item', style: {
+	                    fontSize: '115%',
+	                    color: '#FFFFFF'
+	                }, activeClassName: 'nav-item active', activeStyle: {
 	                    color: '#F59B45'
 	                } },
 	            'Solo Flotilia'
@@ -24926,11 +24937,14 @@
 	        React.createElement(
 	            'span',
 	            null,
-	            '   '
+	            '    '
 	        ),
 	        React.createElement(
 	            IndexLink,
-	            { to: '/fleet', className: 'nav-item', style: { fontSize: '115%', color: '#FFFFFF' }, activeClassName: 'nav-item active', activeStyle: {
+	            { to: '/fleet', className: 'nav-item', style: {
+	                    fontSize: '115%',
+	                    color: '#FFFFFF'
+	                }, activeClassName: 'nav-item active', activeStyle: {
 	                    color: '#F59B45'
 	                } },
 	            'Main Fleet'
@@ -24938,11 +24952,14 @@
 	        React.createElement(
 	            'span',
 	            null,
-	            '   '
+	            '    '
 	        ),
 	        React.createElement(
 	            IndexLink,
-	            { to: '/profile', className: 'nav-item', style: { fontSize: '115%', color: '#FFFFFF' }, activeClassName: 'nav-item active', activeStyle: {
+	            { to: '/profile', className: 'nav-item', style: {
+	                    fontSize: '115%',
+	                    color: '#FFFFFF'
+	                }, activeClassName: 'nav-item active', activeStyle: {
 	                    color: '#F59B45'
 	                } },
 	            'Profile'
@@ -24961,15 +24978,19 @@
 	var React = __webpack_require__(1);
 
 	var Home = function Home(props) {
-	    return React.createElement(
-	        'div',
-	        null,
-	        React.createElement(
-	            'h3',
-	            null,
-	            'Welcome to the Armitage Mobile Militia Offensive homepage'
-	        )
-	    );
+	  return React.createElement(
+	    'div',
+	    { className: 'row container-fluid', style: { background: 'url(/assets/io7dx_1efcg-ant-rozetsky.jpg)', backgroundSize: 'cover', backgroundPosition: 'center' } },
+	    React.createElement(
+	      'div',
+	      { className: 'col-sm-8 offset-sm-2' },
+	      React.createElement(
+	        'h1',
+	        { style: { fontFamily: 'Electrolize', textAlign: 'center', marginTop: '25%' } },
+	        'Armitage Mobile Militia Offensive A.M.M.O.'
+	      )
+	    )
+	  );
 	};
 
 	module.exports = Home;
