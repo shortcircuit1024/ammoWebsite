@@ -158,6 +158,51 @@ var aegisShips = {
   }
 };
 
+var consoOutland = {
+  mustangA: {
+    name: 'Mustang Alpha',
+    role: 'Starter',
+    classification: 'Light Fighter',
+    crew: 1,
+    lti: false,
+    cargo: 10
+  },
+  mustangB: {
+    name: 'Mustang Beta',
+    role: 'Exploration',
+    classification: 'Light Fighter',
+    crew: 1,
+    lti: false,
+    cargo: 10
+  },
+  mustangG: {
+    name: 'Mustang Gamma',
+    role: 'Racing',
+    classification: 'Light Fighter',
+    crew: 1,
+    lti: false,
+    cargo: 10
+  },
+  mustangD: {
+    name: 'Mustang Delta',
+    role: 'Fighter',
+    classification: 'Light Fighter',
+    crew: 1,
+    lti: false,
+    cargo: 860
+  },
+  mustangO: {
+    name: 'Mustang Omega',
+    role: 'Racing',
+    classification: 'Light Fighter',
+    crew: 1,
+    lti: false,
+    cargo: 5400
+  }
+};
+
+
+
 var Floatila = (props) => {
     return (
         <div>
