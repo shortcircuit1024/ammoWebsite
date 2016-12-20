@@ -6,14 +6,12 @@ module.exports = {
     },
     resolve: {
         root: __dirname,
+        modulesDirectories: [
+          'node_modules',
+          './app/components'
+        ],
         alias: {
-          Main: 'app/components/Main.jsx',
-          Nav: 'app/components/Nav.jsx',
-          Fleet: 'app/components/Fleet.jsx',
-          Floatila: 'app/components/Floatila.jsx',
-          Scheduler: 'app/components/Scheduler.jsx',
-          Profile: 'app/components/Profile.jsx',
-          Home: 'app/components/Home.jsx'
+
         },
         extensions: ['', '.js', '.jsx']
     },
