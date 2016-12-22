@@ -1,23 +1,22 @@
-#homeLanding{
-  background-image: url("/assets/io7dx_1efcg-ant-rozetsky.jpg");
-  /*height: inherit;*/
+#homeLanding {
+    background-image: url("/assets/io7dx_1efcg-ant-rozetsky.jpg");
+    /*height: inherit;*/
     padding: 8% 5% 5% 3%;
     /*top: 55px;*/
-
     /*To support older browsers*/
     height: 100%;
     width: 100%;
-
     /* Set the height to match that of the viewport. */
     height: 100vh;
-
     /* Set the width to match that of the viewport. */
     width: 100vw;
-
     background-repeat: no-repeat;
     background-size: cover;
-  /*background-image: url("/assets/io7dx_1efcg-ant-rozetsky.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;*/
+    background-position: center;
 }
+
+.landingText {
+    text-shadow: 0px 0px 20px black;
+}
+
+.landingHeader {}

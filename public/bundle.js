@@ -25028,12 +25028,18 @@
 	    { className: "row container-fluid", id: "homeLanding" },
 	    React.createElement(
 	      "div",
-	      { className: "col-sm-8 offset-sm-2 text-xs-center" },
+	      { className: "col-sm-8 offset-sm-2 text-lg-center" },
+	      React.createElement(
+	        "h2",
+	        { className: "landingText", style: { fontFamily: 'Electrolize', marginTop: '25%', color: 'white' } },
+	        "Armitage Mobile Militia Offensive"
+	      ),
 	      React.createElement(
 	        "h1",
-	        { style: { fontFamily: 'Electrolize', textAlign: 'center', marginTop: '25%', color: 'white' } },
-	        "Armitage Mobile Militia Offensive A.M.M.O."
-	      )
+	        { className: "landingText", style: { fontFamily: 'Electrolize', marginTop: '0%', color: '#F59B45' } },
+	        "A.M.M.O."
+	      ),
+	      React.createElement("p", { className: "landingText" })
 	    )
 	  );
 	};
