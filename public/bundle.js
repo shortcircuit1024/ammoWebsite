@@ -24927,6 +24927,7 @@
 	//     );
 	// };
 
+
 	var Nav = function Nav() {
 	    return React.createElement(
 	        'nav',
@@ -24945,7 +24946,9 @@
 	                    fontSize: '115%',
 	                    color: '#FFFFFF'
 	                }, activeClassName: 'nav-item active', activeStyle: {
-	                    color: '#F59B45'
+	                    color: '#F59B45',
+	                    borderBottom: '4px solid #F59B45',
+	                    textDecoration: 'none'
 	                } },
 	            'Home'
 	        ),
@@ -24960,7 +24963,9 @@
 	                    fontSize: '115%',
 	                    color: '#FFFFFF'
 	                }, activeClassName: 'nav-item active', activeStyle: {
-	                    color: '#F59B45'
+	                    color: '#F59B45',
+	                    borderBottom: '4px solid #F59B45',
+	                    textDecoration: 'none'
 	                } },
 	            'Scheduler'
 	        ),
@@ -24975,7 +24980,9 @@
 	                    fontSize: '115%',
 	                    color: '#FFFFFF'
 	                }, activeClassName: 'nav-item active', activeStyle: {
-	                    color: '#F59B45'
+	                    color: '#F59B45',
+	                    borderBottom: '4px solid #F59B45',
+	                    textDecoration: 'none'
 	                } },
 	            'Solo Flotilia'
 	        ),
@@ -24990,7 +24997,9 @@
 	                    fontSize: '115%',
 	                    color: '#FFFFFF'
 	                }, activeClassName: 'nav-item active', activeStyle: {
-	                    color: '#F59B45'
+	                    color: '#F59B45',
+	                    borderBottom: '4px solid #F59B45',
+	                    textDecoration: 'none'
 	                } },
 	            'Main Fleet'
 	        ),
@@ -25005,7 +25014,9 @@
 	                    fontSize: '115%',
 	                    color: '#FFFFFF'
 	                }, activeClassName: 'nav-item active', activeStyle: {
-	                    color: '#F59B45'
+	                    color: '#F59B45',
+	                    borderBottom: '4px solid #F59B45',
+	                    textDecoration: 'none'
 	                } },
 	            'Profile'
 	        )
@@ -25037,7 +25048,11 @@
 	      React.createElement(
 	        "h1",
 	        { className: "landingText", style: { fontFamily: 'Electrolize', marginTop: '0%', color: '#F59B45' } },
-	        "A.M.M.O."
+	        React.createElement(
+	          "b",
+	          null,
+	          " A . M . M . O . "
+	        )
 	      ),
 	      React.createElement("p", { className: "landingText" })
 	    )

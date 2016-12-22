@@ -45,7 +45,6 @@ var {Link, IndexLink} = require('react-router');
 //         </nav>
 //     );
 // };
-
 var Nav = () => {
     return (
         <nav className="navbar navbar-full navbar-dark bg-inverse" style={{
@@ -57,35 +56,45 @@ var Nav = () => {
                 fontSize: '115%',
                 color: '#FFFFFF'
             }} activeClassName="nav-item active" activeStyle={{
-                color: '#F59B45'
+                color: '#F59B45',
+                borderBottom: '4px solid #F59B45',
+                textDecoration: 'none'
             }}>Home</IndexLink>
             <span>      </span>
             <IndexLink to="/scheduler" className="nav-item" style={{
                 fontSize: '115%',
                 color: '#FFFFFF'
             }} activeClassName="nav-item active" activeStyle={{
-                color: '#F59B45'
+                color: '#F59B45',
+                borderBottom: '4px solid #F59B45',
+                textDecoration: 'none'
             }}>Scheduler</IndexLink>
             <span>      </span>
             <IndexLink to="/floatila" className="nav-item" style={{
                 fontSize: '115%',
                 color: '#FFFFFF'
             }} activeClassName="nav-item active" activeStyle={{
-                color: '#F59B45'
+                color: '#F59B45',
+                borderBottom: '4px solid #F59B45',
+                textDecoration: 'none'
             }}>Solo Flotilia</IndexLink>
             <span>      </span>
             <IndexLink to="/fleet" className="nav-item" style={{
                 fontSize: '115%',
                 color: '#FFFFFF'
             }} activeClassName="nav-item active" activeStyle={{
-                color: '#F59B45'
+                color: '#F59B45',
+                borderBottom: '4px solid #F59B45',
+                textDecoration: 'none'
             }}>Main Fleet</IndexLink>
             <span>      </span>
             <IndexLink to="/profile" className="nav-item float-xs-right" style={{
                 fontSize: '115%',
                 color: '#FFFFFF'
             }} activeClassName="nav-item active" activeStyle={{
-                color: '#F59B45'
+                color: '#F59B45',
+                borderBottom: '4px solid #F59B45',
+                textDecoration: 'none'
             }}>Profile</IndexLink>
         </nav>
     );
