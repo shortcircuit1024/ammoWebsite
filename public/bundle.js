@@ -24976,12 +24976,12 @@
 	      { className: "col-sm-8 offset-sm-2 text-lg-center" },
 	      React.createElement(
 	        "h3",
-	        { className: "landingText", style: { fontFamily: 'Electrolize', marginTop: '25%', color: 'white' } },
+	        { className: "landingText", style: { fontFamily: 'Electrolize', textAlign: 'center', marginTop: '25%', color: 'white' } },
 	        "Armitage Mobile Militia Offensive"
 	      ),
 	      React.createElement(
 	        "h1",
-	        { className: "landingText", style: { fontFamily: 'Electrolize', marginTop: '0%', color: '#F59B45' } },
+	        { className: "landingText", style: { fontFamily: 'Electrolize', textAlign: 'center', marginTop: '0%', color: '#F59B45' } },
 	        React.createElement(
 	          "b",
 	          null,
