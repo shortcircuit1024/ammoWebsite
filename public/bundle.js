@@ -24889,12 +24889,17 @@
 	                fontFamily: 'Electrolize'
 	            } },
 	        React.createElement('img', { src: '/assets/AMMO_writing.svg', width: '35', height: '35', alt: '' }),
-	        React.createElement('span', null),
+	        React.createElement(
+	            'span',
+	            null,
+	            '  '
+	        ),
 	        React.createElement(
 	            IndexLink,
 	            { to: '/', className: 'nav-item', style: {
 	                    fontSize: '115%',
-	                    color: '#FFFFFF'
+	                    color: '#FFFFFF',
+	                    padding: '5px'
 	                }, activeClassName: 'nav-item active', activeStyle: {
 	                    color: '#F59B45',
 	                    borderBottom: '4px solid #F59B45',
@@ -24902,12 +24907,17 @@
 	                } },
 	            'Home'
 	        ),
-	        React.createElement('span', null),
+	        React.createElement(
+	            'span',
+	            null,
+	            '  '
+	        ),
 	        React.createElement(
 	            IndexLink,
 	            { to: '/scheduler', className: 'nav-item', style: {
 	                    fontSize: '115%',
-	                    color: '#FFFFFF'
+	                    color: '#FFFFFF',
+	                    padding: '5px'
 	                }, activeClassName: 'nav-item active', activeStyle: {
 	                    color: '#F59B45',
 	                    borderBottom: '4px solid #F59B45',
@@ -24915,12 +24925,17 @@
 	                } },
 	            'Scheduler'
 	        ),
-	        React.createElement('span', null),
+	        React.createElement(
+	            'span',
+	            null,
+	            '  '
+	        ),
 	        React.createElement(
 	            IndexLink,
 	            { to: '/floatila', className: 'nav-item', style: {
 	                    fontSize: '115%',
-	                    color: '#FFFFFF'
+	                    color: '#FFFFFF',
+	                    padding: '5px'
 	                }, activeClassName: 'nav-item active', activeStyle: {
 	                    color: '#F59B45',
 	                    borderBottom: '4px solid #F59B45',
@@ -24928,12 +24943,17 @@
 	                } },
 	            'Solo Flotilia'
 	        ),
-	        React.createElement('span', null),
+	        React.createElement(
+	            'span',
+	            null,
+	            '  '
+	        ),
 	        React.createElement(
 	            IndexLink,
 	            { to: '/fleet', className: 'nav-item', style: {
 	                    fontSize: '115%',
-	                    color: '#FFFFFF'
+	                    color: '#FFFFFF',
+	                    padding: '5px'
 	                }, activeClassName: 'nav-item active', activeStyle: {
 	                    color: '#F59B45',
 	                    borderBottom: '4px solid #F59B45',
@@ -24941,12 +24961,17 @@
 	                } },
 	            'Main Fleet'
 	        ),
-	        React.createElement('span', null),
+	        React.createElement(
+	            'span',
+	            null,
+	            '  '
+	        ),
 	        React.createElement(
 	            IndexLink,
 	            { to: '/profile', className: 'nav-item float-xs-right', style: {
 	                    fontSize: '115%',
-	                    color: '#FFFFFF'
+	                    color: '#FFFFFF',
+	                    padding: '5px'
 	                }, activeClassName: 'nav-item active', activeStyle: {
 	                    color: '#F59B45',
 	                    borderBottom: '4px solid #F59B45',
@@ -24973,22 +24998,30 @@
 	    { className: "row container-fluid", id: "homeLanding" },
 	    React.createElement(
 	      "div",
-	      { className: "col-sm-8 offset-sm-2 text-lg-center" },
+	      { className: "col-sm-8 offset-sm-2" },
 	      React.createElement(
 	        "h3",
-	        { className: "landingText", style: { fontFamily: 'Electrolize', textAlign: 'center', marginTop: '25%', color: 'white' } },
+	        { className: "landingHeader", style: { fontFamily: 'Electrolize', textAlign: 'center', marginTop: '25%', color: 'white' } },
 	        "Armitage Mobile Militia Offensive"
 	      ),
 	      React.createElement(
 	        "h1",
-	        { className: "landingText", style: { fontFamily: 'Electrolize', textAlign: 'center', marginTop: '0%', color: '#F59B45' } },
+	        { className: "landingHeader", style: { fontFamily: 'Electrolize', textAlign: 'center', marginBottom: '0%', color: '#F59B45' } },
 	        React.createElement(
 	          "b",
 	          null,
 	          " A . M . M . O . "
 	        )
 	      ),
-	      React.createElement("p", { className: "landingText" })
+	      React.createElement(
+	        "p",
+	        { className: "landingText lead", style: { fontFamily: 'Offside', textAlign: 'center' } },
+	        React.createElement(
+	          "small",
+	          null,
+	          "ex oblivione, unitas"
+	        )
+	      )
 	    )
 	  );
 	};

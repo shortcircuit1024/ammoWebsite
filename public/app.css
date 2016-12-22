@@ -17,8 +17,11 @@
 
 .landingText {
     text-shadow: 0px 0px 20px black;
+    color: white;
+    margin-top: 0%;
+    font-style: italic;
 }
 
 .landingHeader {
-  font-size: 125%;
+  text-shadow: 0px 0px 20px black;
 }

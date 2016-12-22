@@ -7,46 +7,51 @@ var Nav = () => {
             fontFamily: 'Electrolize'
         }}>
             <img src="/assets/AMMO_writing.svg" width="35" height="35" alt=""/>
-            <span></span>
+            <span>  </span>
             <IndexLink to="/" className="nav-item" style={{
                 fontSize: '115%',
-                color: '#FFFFFF'
+                color: '#FFFFFF',
+                padding: '5px'
             }} activeClassName="nav-item active" activeStyle={{
                 color: '#F59B45',
                 borderBottom: '4px solid #F59B45',
                 textDecoration: 'none'
             }}>Home</IndexLink>
-            <span></span>
+            <span>  </span>
             <IndexLink to="/scheduler" className="nav-item" style={{
                 fontSize: '115%',
-                color: '#FFFFFF'
+                color: '#FFFFFF',
+                padding: '5px'
             }} activeClassName="nav-item active" activeStyle={{
                 color: '#F59B45',
                 borderBottom: '4px solid #F59B45',
                 textDecoration: 'none'
             }}>Scheduler</IndexLink>
-            <span></span>
+            <span>  </span>
             <IndexLink to="/floatila" className="nav-item" style={{
                 fontSize: '115%',
-                color: '#FFFFFF'
+                color: '#FFFFFF',
+                padding: '5px'
             }} activeClassName="nav-item active" activeStyle={{
                 color: '#F59B45',
                 borderBottom: '4px solid #F59B45',
                 textDecoration: 'none'
             }}>Solo Flotilia</IndexLink>
-            <span></span>
+            <span>  </span>
             <IndexLink to="/fleet" className="nav-item" style={{
                 fontSize: '115%',
-                color: '#FFFFFF'
+                color: '#FFFFFF',
+                padding: '5px'
             }} activeClassName="nav-item active" activeStyle={{
                 color: '#F59B45',
                 borderBottom: '4px solid #F59B45',
                 textDecoration: 'none'
             }}>Main Fleet</IndexLink>
-            <span></span>
+            <span>  </span>
             <IndexLink to="/profile" className="nav-item float-xs-right" style={{
                 fontSize: '115%',
-                color: '#FFFFFF'
+                color: '#FFFFFF',
+                padding: '5px'
             }} activeClassName="nav-item active" activeStyle={{
                 color: '#F59B45',
                 borderBottom: '4px solid #F59B45',
