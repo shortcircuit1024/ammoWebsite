@@ -15,7 +15,7 @@ var Profile = (props) => {
                             <a href="#">Reports</a>
                         </li>
                         <li>
-                            <a href="#">Analytics</a>
+                            <a href="#">Ships</a>
                         </li>
                         <li>
                             <a href="#">Export</a>
