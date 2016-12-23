@@ -3,7 +3,7 @@ var {Link, IndexLink} = require('react-router');
 
 var Nav = () => {
     return (
-        <nav className="navbar navbar-full navbar-dark bg-inverse" style={{
+        <nav className="navbar navbar-fixed-top navbar-full navbar-dark bg-inverse" style={{
             fontFamily: 'Electrolize'
         }}>
             <img src="/assets/AMMO_writing.svg" width="35" height="35" alt=""/>

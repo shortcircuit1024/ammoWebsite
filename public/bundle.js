@@ -24885,7 +24885,7 @@
 	var Nav = function Nav() {
 	    return React.createElement(
 	        'nav',
-	        { className: 'navbar navbar-full navbar-dark bg-inverse', style: {
+	        { className: 'navbar navbar-fixed-top navbar-full navbar-dark bg-inverse', style: {
 	                fontFamily: 'Electrolize'
 	            } },
 	        React.createElement('img', { src: '/assets/AMMO_writing.svg', width: '35', height: '35', alt: '' }),
