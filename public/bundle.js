@@ -25453,7 +25453,7 @@
 	                    React.createElement(
 	                        "div",
 	                        { className: "col-xs-6 col-sm-3 placeholder" },
-	                        React.createElement("img", { src: "", width: "200", height: "200", className: "img-fluid", alt: "Generic placeholder thumbnail" }),
+	                        React.createElement("img", { src: "/assets/AMMO_writing.svg", width: "200", height: "200", className: "img-fluid", alt: "Generic placeholder thumbnail" }),
 	                        React.createElement(
 	                            "h4",
 	                            null,
@@ -25468,7 +25468,7 @@
 	                    React.createElement(
 	                        "div",
 	                        { className: "col-xs-6 col-sm-3 placeholder" },
-	                        React.createElement("img", { src: "", width: "200", height: "200", className: "img-fluid", alt: "Generic placeholder thumbnail" }),
+	                        React.createElement("img", { src: "/assets/AMMO_writing.svg", width: "200", height: "200", className: "img-fluid", alt: "Generic placeholder thumbnail" }),
 	                        React.createElement(
 	                            "h4",
 	                            null,
@@ -25483,7 +25483,7 @@
 	                    React.createElement(
 	                        "div",
 	                        { className: "col-xs-6 col-sm-3 placeholder" },
-	                        React.createElement("img", { src: "", width: "200", height: "200", className: "img-fluid", alt: "Generic placeholder thumbnail" }),
+	                        React.createElement("img", { src: "/assets/AMMO_writing.svg", width: "200", height: "200", className: "img-fluid", alt: "Generic placeholder thumbnail" }),
 	                        React.createElement(
 	                            "h4",
 	                            null,
@@ -25498,7 +25498,7 @@
 	                    React.createElement(
 	                        "div",
 	                        { className: "col-xs-6 col-sm-3 placeholder" },
-	                        React.createElement("img", { src: "", width: "200", height: "200", className: "img-fluid", alt: "Generic placeholder thumbnail" }),
+	                        React.createElement("img", { src: "/assets/AMMO_writing.svg", width: "200", height: "200", className: "img-fluid", alt: "Generic placeholder thumbnail" }),
 	                        React.createElement(
 	                            "h4",
 	                            null,
