@@ -15,6 +15,13 @@
     background-position: center;
 }
 
+#homeBanner {
+    background-image: url("https://robertsspaceindustries.com/media/77w2o1956yr43r/logo/AMMO-Logo.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    height: auto;
+}
+
 .landingText {
     text-shadow: 0px 0px 20px black;
     color: white;
