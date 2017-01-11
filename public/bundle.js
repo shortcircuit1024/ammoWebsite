@@ -58,22 +58,24 @@
 	var Main = __webpack_require__(222);
 	var Home = __webpack_require__(224);
 	var Scheduler = __webpack_require__(225);
-	var Fleet = __webpack_require__(227);
-	var Floatila = __webpack_require__(228);
-	var Profile = __webpack_require__(229);
+	var Fleet = __webpack_require__(228);
+	var Floatila = __webpack_require__(229);
+	var Profile = __webpack_require__(230);
+	var About = __webpack_require__(231);
 
 	ReactDOM.render(React.createElement(
-	  Router,
-	  { history: hashHistory },
-	  React.createElement(
-	    Route,
-	    { path: '/', component: Main },
-	    React.createElement(Route, { path: 'scheduler', component: Scheduler }),
-	    React.createElement(Route, { path: 'fleet', component: Fleet }),
-	    React.createElement(Route, { path: 'floatila', component: Floatila }),
-	    React.createElement(Route, { path: 'profile', component: Profile }),
-	    React.createElement(IndexRoute, { component: Home })
-	  )
+	    Router,
+	    { history: hashHistory },
+	    React.createElement(
+	        Route,
+	        { path: '/', component: Main },
+	        React.createElement(Route, { path: 'scheduler', component: Scheduler }),
+	        React.createElement(Route, { path: 'fleet', component: Fleet }),
+	        React.createElement(Route, { path: 'floatila', component: Floatila }),
+	        React.createElement(Route, { path: 'about', component: About }),
+	        React.createElement(Route, { path: 'profile', component: Profile }),
+	        React.createElement(IndexRoute, { component: Home })
+	    )
 	), document.getElementById('app'));
 
 /***/ },
@@ -25454,21 +25456,36 @@
 	    Link = _require.Link,
 	    IndexLink = _require.IndexLink;
 
+	var UTCClock = __webpack_require__(227);
+
 	var Nav = function Nav() {
 	    return React.createElement(
 	        'nav',
 	        { className: 'navbar navbar-fixed-top navbar-full navbar-dark bg-inverse', style: {
-	                fontFamily: 'Electrolize'
+	                fontFamily: 'Electrolize',
+	                height: '50px'
 	            } },
-	        React.createElement('img', { src: '/assets/AMMO_writing.svg', width: '35', height: '35', alt: '' }),
 	        React.createElement(
-	            'span',
-	            null,
-	            '  '
+	            IndexLink,
+	            { to: '/' },
+	            React.createElement('img', { src: '/assets/AMMO_no_writing.svg', className: 'float-xs-left', width: '35', height: '35', alt: '' })
 	        ),
 	        React.createElement(
 	            IndexLink,
-	            { to: '/', className: 'nav-item', style: {
+	            { to: '/', className: 'nav-item float-sm-left hidden-xs-down', style: {
+	                    fontSize: '115%',
+	                    color: '#FFFFFF',
+	                    padding: '5px'
+	                }, activeClassName: 'nav-item active float-sm-left hidden-xs-down', activeStyle: {
+	                    color: '#F59B45',
+	                    borderBottom: '4px solid #F59B45',
+	                    textDecoration: 'none'
+	                } },
+	            '   Home'
+	        ),
+	        React.createElement(
+	            IndexLink,
+	            { to: '/scheduler', className: 'nav-item float-sm-left hidden-xs-down', style: {
 	                    fontSize: '115%',
 	                    color: '#FFFFFF',
 	                    padding: '5px'
@@ -25477,16 +25494,11 @@
 	                    borderBottom: '4px solid #F59B45',
 	                    textDecoration: 'none'
 	                } },
-	            'Home'
-	        ),
-	        React.createElement(
-	            'span',
-	            null,
-	            '  '
+	            '   Scheduler'
 	        ),
 	        React.createElement(
 	            IndexLink,
-	            { to: '/scheduler', className: 'nav-item', style: {
+	            { to: '/floatila', className: 'nav-item float-sm-left hidden-xs-down', style: {
 	                    fontSize: '115%',
 	                    color: '#FFFFFF',
 	                    padding: '5px'
@@ -25495,16 +25507,11 @@
 	                    borderBottom: '4px solid #F59B45',
 	                    textDecoration: 'none'
 	                } },
-	            'Scheduler'
-	        ),
-	        React.createElement(
-	            'span',
-	            null,
-	            '  '
+	            '   Solo Flotilia'
 	        ),
 	        React.createElement(
 	            IndexLink,
-	            { to: '/floatila', className: 'nav-item', style: {
+	            { to: '/fleet', className: 'nav-item float-sm-left hidden-xs-down', style: {
 	                    fontSize: '115%',
 	                    color: '#FFFFFF',
 	                    padding: '5px'
@@ -25513,16 +25520,11 @@
 	                    borderBottom: '4px solid #F59B45',
 	                    textDecoration: 'none'
 	                } },
-	            'Solo Flotilia'
-	        ),
-	        React.createElement(
-	            'span',
-	            null,
-	            '  '
+	            '   Main Fleet'
 	        ),
 	        React.createElement(
 	            IndexLink,
-	            { to: '/fleet', className: 'nav-item', style: {
+	            { to: '/about', className: 'nav-item float-sm-left hidden-xs-down', style: {
 	                    fontSize: '115%',
 	                    color: '#FFFFFF',
 	                    padding: '5px'
@@ -25531,16 +25533,17 @@
 	                    borderBottom: '4px solid #F59B45',
 	                    textDecoration: 'none'
 	                } },
-	            'Main Fleet'
+	            '   About'
 	        ),
 	        React.createElement(
-	            'span',
-	            null,
-	            '  '
+	            'div',
+	            { className: 'nav item float-sm-left hidden-xs-down', style: { color: 'gray', padding: '7px' } },
+	            '    ',
+	            React.createElement(UTCClock, null)
 	        ),
 	        React.createElement(
 	            IndexLink,
-	            { to: '/profile', className: 'nav-item float-xs-right', style: {
+	            { to: '/profile', className: 'nav-item float-sm-right hidden-xs-down', style: {
 	                    fontSize: '115%',
 	                    color: '#FFFFFF',
 	                    padding: '5px'
@@ -25550,6 +25553,71 @@
 	                    textDecoration: 'none'
 	                } },
 	            'Profile'
+	        ),
+	        React.createElement(
+	            IndexLink,
+	            { to: '/', className: 'nav-item float-xs-left hidden-sm-up', style: {
+	                    fontSize: '115%',
+	                    color: '#FFFFFF',
+	                    padding: '5px'
+	                }, activeClassName: 'nav-item active float-xs-left hidden-sm-up', activeStyle: {
+	                    color: '#F59B45',
+	                    borderBottom: '4px solid #F59B45',
+	                    textDecoration: 'none'
+	                } },
+	            React.createElement('span', { className: 'fa fa-home', 'aria-hidden': 'true' })
+	        ),
+	        React.createElement(
+	            IndexLink,
+	            { to: '/scheduler', className: 'nav-item float-xs-left hidden-sm-up', style: {
+	                    fontSize: '115%',
+	                    color: '#FFFFFF',
+	                    padding: '5px'
+	                }, activeClassName: 'nav-item active', activeStyle: {
+	                    color: '#F59B45',
+	                    borderBottom: '4px solid #F59B45',
+	                    textDecoration: 'none'
+	                } },
+	            React.createElement('span', { className: 'fa fa-calendar', 'aria-hidden': 'true' })
+	        ),
+	        React.createElement(
+	            IndexLink,
+	            { to: '/floatila', className: 'nav-item float-xs-left hidden-sm-up', style: {
+	                    fontSize: '115%',
+	                    color: '#FFFFFF',
+	                    padding: '5px'
+	                }, activeClassName: 'nav-item active', activeStyle: {
+	                    color: '#F59B45',
+	                    borderBottom: '4px solid #F59B45',
+	                    textDecoration: 'none'
+	                } },
+	            React.createElement('span', { className: 'fa fa-user', 'aria-hidden': 'true' })
+	        ),
+	        React.createElement(
+	            IndexLink,
+	            { to: '/fleet', className: 'nav-item float-xs-left hidden-sm-up', style: {
+	                    fontSize: '115%',
+	                    color: '#FFFFFF',
+	                    padding: '5px'
+	                }, activeClassName: 'nav-item active', activeStyle: {
+	                    color: '#F59B45',
+	                    borderBottom: '4px solid #F59B45',
+	                    textDecoration: 'none'
+	                } },
+	            React.createElement('span', { className: 'fa fa-users', 'aria-hidden': 'true' })
+	        ),
+	        React.createElement(
+	            IndexLink,
+	            { to: '/profile', className: 'nav-item float-xs-right hidden-sm-up', style: {
+	                    fontSize: '115%',
+	                    color: '#FFFFFF',
+	                    padding: '5px'
+	                }, activeClassName: 'nav-item active', activeStyle: {
+	                    color: '#F59B45',
+	                    borderBottom: '4px solid #F59B45',
+	                    textDecoration: 'none'
+	                } },
+	            React.createElement('span', { className: 'fa fa-user-circle', 'aria-hidden': 'true' })
 	        )
 	    );
 	};
@@ -25578,7 +25646,7 @@
 	      ),
 	      React.createElement(
 	        "h1",
-	        { className: "landingHeader", style: { fontFamily: 'Electrolize', textAlign: 'center', marginBottom: '0%', color: '#F59B45' } },
+	        { className: "landingHeader display-4", style: { fontFamily: 'Electrolize', textAlign: 'center', marginBottom: '0%', color: '#F59B45' } },
 	        React.createElement(
 	          "b",
 	          null,
@@ -25608,33 +25676,21 @@
 
 	var React = __webpack_require__(1);
 	var Clock = __webpack_require__(226);
+	var UTCClock = __webpack_require__(227);
 
 	var Scheduler = React.createClass({
 	    displayName: 'Scheduler',
 
 	    render: function render() {
-	        var d = new Date();
-	        var n = d.getTimezoneOffset();
-	        var s = d.toTimeString();
 	        return React.createElement(
 	            'div',
-	            { style: { padding: '53px' } },
+	            { style: {
+	                    padding: '53px'
+	                } },
 	            React.createElement(
 	                'h3',
 	                null,
 	                'Welcome to the AMMO Scheduler'
-	            ),
-	            React.createElement(Clock, null),
-	            React.createElement(
-	                'p',
-	                null,
-	                s
-	            ),
-	            React.createElement(
-	                'p',
-	                null,
-	                'Offset ',
-	                n / 60 * -1
 	            )
 	        );
 	    }
@@ -25748,12 +25804,100 @@
 
 	'use strict';
 
+	var _react = __webpack_require__(1);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	var output;
+
+	var SetIntervalMixin = {
+	  componentWillMount: function componentWillMount() {
+	    this.intervals = [];
+	  },
+	  componentWillUnmount: function componentWillUnmount() {
+	    this.intervals.map(clearInterval);
+	  },
+	  setInterval: function (_setInterval) {
+	    function setInterval() {
+	      return _setInterval.apply(this, arguments);
+	    }
+
+	    setInterval.toString = function () {
+	      return _setInterval.toString();
+	    };
+
+	    return setInterval;
+	  }(function () {
+	    this.intervals.push(setInterval.apply(null, arguments));
+	  })
+	};
+
+	var renderTime = function renderTime() {
+	  var currentTime = new Date();
+	  var h = currentTime.getUTCHours();
+	  var m = currentTime.getUTCMinutes();
+	  var s = currentTime.getUTCSeconds();
+
+	  if (h < 10) {
+	    h = '0' + h;
+	  }
+	  if (m < 10) {
+	    m = '0' + m;
+	  }
+	  if (s < 10) {
+	    s = '0' + s;
+	  }
+	  output = {
+	    hours: h,
+	    minutes: m,
+	    seconds: s
+	  };
+	  return output;
+	};
+
+	var UTCClock = _react2.default.createClass({
+	  displayName: 'UTCClock',
+
+	  mixins: [SetIntervalMixin],
+	  getInitialState: function getInitialState() {
+	    return { time: renderTime() };
+	  },
+	  componentDidMount: function componentDidMount() {
+	    this.setInterval(this.tick, 1000);
+	  },
+	  tick: function tick() {
+	    renderTime();
+	    this.setState({ hours: output.hours, minutes: output.minutes, seconds: output.seconds });
+	  },
+	  render: function render() {
+	    return _react2.default.createElement(
+	      'span',
+	      null,
+	      this.state.hours,
+	      ':',
+	      this.state.minutes,
+	      ':',
+	      this.state.seconds
+	    );
+	  }
+	});
+
+	module.exports = UTCClock;
+
+/***/ },
+/* 228 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
 	var React = __webpack_require__(1);
 
 	var Fleet = function Fleet(props) {
 	    return React.createElement(
 	        'div',
-	        null,
+	        { style: { padding: '53px' } },
 	        React.createElement(
 	            'h3',
 	            null,
@@ -25765,7 +25909,7 @@
 	module.exports = Fleet;
 
 /***/ },
-/* 228 */
+/* 229 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -25976,7 +26120,7 @@
 	var Floatila = function Floatila(props) {
 	  return React.createElement(
 	    'div',
-	    null,
+	    { style: { padding: '53px' } },
 	    React.createElement(
 	      'h3',
 	      null,
@@ -25988,7 +26132,7 @@
 	module.exports = Floatila;
 
 /***/ },
-/* 229 */
+/* 230 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -26723,6 +26867,64 @@
 	};
 
 	module.exports = Profile;
+
+/***/ },
+/* 231 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	var React = __webpack_require__(1);
+
+	var About = function About(props) {
+	    return React.createElement(
+	        'div',
+	        { style: {
+	                padding: '53px'
+	            } },
+	        React.createElement(
+	            'h3',
+	            { className: 'display-4' },
+	            'The History of ',
+	            React.createElement(
+	                'span',
+	                { style: { color: '#F59B45' } },
+	                'A.M.M.O.'
+	            )
+	        ),
+	        React.createElement(
+	            'p',
+	            null,
+	            'AMMO was born from the ashes of Orion Terra-systems, a corporation based on Armitage that helped to prepare the planet for the large-scale agriculture it was becoming known for. At that time, the first elements of the org were part of the corporation\u2019s Mobile Militia Division \u2013 essentially a security force whose main focus was protecting the company\u2019s facilities and headquarters on Armitage and its interests in the system as a whole. When the Vanduul were first recognized as a true threat rather than just another group of pirate raiders, Orion Terra-systems\u2019 leadership made an unusual decision \u2013 the Final Order. Rather than evacuate to protect corporate assets and profits, they asked all able personnel to hold fast, protecting the escaping farmers and other civilians. The Mobile Militia Division made up a significant portion of the \u201Ccivilian\u201D ships that stood alongside the Peacekeeper Security forces in the desperate defense of the planet that helped to save the lives of the last evacuees of the planet.'
+	        ),
+	        React.createElement(
+	            'p',
+	            null,
+	            'In the chaos of the aftermath, it became clear to the Mobile Militia\u2019s surviving commanders that Orion Terra-Systems, as a company, had not survived. They were a corporate security division without a corporation to secure. Understanding the sacrifice that had been made, however, most of the surviving commanders chose to continue the mission they were given \u2013 to protect civilian refugees from Armitage, and give them the means to escape to nearby systems that were, as of yet, not threatened by the Vanduul. Gradually the disparate ship captains and squadrons assembled at their old rendezvous points near the edge of the Caliban system. The Mobile Militia used surviving corporate freighters as impromptu supply depots, hospitals, and even temporary shelters for refugees as they arranged passage on transport ships bound for safer places in the galaxy.'
+	        ),
+	        React.createElement(
+	            'p',
+	            null,
+	            'The Mobile Militia\u2019s errant forces rallied around the Final Order, taking their role as refugee protectors to heart. As the flow of refugees trickled to a halt and Vanduul sorties pressed closer and closer, they had still not officially recognized that they were no longer a part of a corporation. That only came with the decision of the commanders to abandon their rendezvous point for a more permanent base of operations, in the face of a large Vanduul raid seemingly targeting them specifically. Daring Mobile Militia captains led the raiders on a twisting chase between the Caliban system\u2019s many jump points, while affiliated freighters and other civilian ships made their escape. When the surviving diversion force\u2019s ships arrived in Oberon, it marked their first real \u201Cvictory\u201D against the enemy, as well as the first official operation of the Armitage Mobile Militia Offensive.'
+	        ),
+	        React.createElement(
+	            'p',
+	            null,
+	            'In the years and decades that followed, AMMO developed into something similar to the independent organizations of the modern UEE \u2013 They followed the military structure of their organization, but increasingly blended in trade and other non-combat roles, at first to provide logistics and later to earn the credits that kept the fleet flying. AMMO fighters flew escort for independent traders and small-scale company fleets. AMMO haulers moved goods between dozens of independent and UEE worlds along the edge of increasingly tense borders. The Final Order was never forgotten, though \u2013 Orion survivors and their descendants, often part of the other vast networks of pilots and captains, knew they could always trust their AMMO comrades.'
+	        ),
+	        React.createElement(
+	            'h3',
+	            { className: 'display-4' },
+	            'Our Principles'
+	        ),
+	        React.createElement('p', null),
+	        React.createElement('p', null),
+	        React.createElement('p', null),
+	        React.createElement('p', null)
+	    );
+	};
+
+	module.exports = About;
 
 /***/ }
 /******/ ]);

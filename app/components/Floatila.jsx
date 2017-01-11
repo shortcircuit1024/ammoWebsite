@@ -205,7 +205,7 @@ var consoOutland = {
 
 var Floatila = (props) => {
     return (
-        <div>
+        <div style={{padding: '53px'}}>
           <h3>Welcome to our Flotilia</h3>
         </div>
     )
