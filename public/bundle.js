@@ -56,8 +56,8 @@
 	    hashHistory = _require.hashHistory;
 
 	var Main = __webpack_require__(222);
-	var Home = __webpack_require__(224);
-	var Scheduler = __webpack_require__(225);
+	var Home = __webpack_require__(225);
+	var Scheduler = __webpack_require__(226);
 	var Fleet = __webpack_require__(228);
 	var Floatila = __webpack_require__(229);
 	var Profile = __webpack_require__(230);
@@ -25456,168 +25456,112 @@
 	    Link = _require.Link,
 	    IndexLink = _require.IndexLink;
 
-	var UTCClock = __webpack_require__(227);
+	var UTCClock = __webpack_require__(224);
 
 	var Nav = function Nav() {
 	    return React.createElement(
 	        'nav',
-	        { className: 'navbar navbar-fixed-top navbar-full navbar-dark bg-inverse', style: {
+	        { className: 'navbar navbar-fixed-top navbar-full navbar-dark bg-inverse row hidden-xs-down', style: {
 	                fontFamily: 'Electrolize',
 	                height: '50px'
 	            } },
+	        ' ',
 	        React.createElement(
-	            IndexLink,
-	            { to: '/' },
-	            React.createElement('img', { src: '/assets/AMMO_no_writing.svg', className: 'float-xs-left', width: '35', height: '35', alt: '' })
-	        ),
-	        React.createElement(
-	            IndexLink,
-	            { to: '/', className: 'nav-item float-sm-left hidden-xs-down', style: {
-	                    fontSize: '115%',
-	                    color: '#FFFFFF',
-	                    padding: '5px'
-	                }, activeClassName: 'nav-item active float-sm-left hidden-xs-down', activeStyle: {
-	                    color: '#F59B45',
-	                    borderBottom: '4px solid #F59B45',
-	                    textDecoration: 'none'
-	                } },
-	            '   Home'
-	        ),
-	        React.createElement(
-	            IndexLink,
-	            { to: '/scheduler', className: 'nav-item float-sm-left hidden-xs-down', style: {
-	                    fontSize: '115%',
-	                    color: '#FFFFFF',
-	                    padding: '5px'
-	                }, activeClassName: 'nav-item active', activeStyle: {
-	                    color: '#F59B45',
-	                    borderBottom: '4px solid #F59B45',
-	                    textDecoration: 'none'
-	                } },
-	            '   Scheduler'
-	        ),
-	        React.createElement(
-	            IndexLink,
-	            { to: '/floatila', className: 'nav-item float-sm-left hidden-xs-down', style: {
-	                    fontSize: '115%',
-	                    color: '#FFFFFF',
-	                    padding: '5px'
-	                }, activeClassName: 'nav-item active', activeStyle: {
-	                    color: '#F59B45',
-	                    borderBottom: '4px solid #F59B45',
-	                    textDecoration: 'none'
-	                } },
-	            '   Solo Flotilia'
-	        ),
-	        React.createElement(
-	            IndexLink,
-	            { to: '/fleet', className: 'nav-item float-sm-left hidden-xs-down', style: {
-	                    fontSize: '115%',
-	                    color: '#FFFFFF',
-	                    padding: '5px'
-	                }, activeClassName: 'nav-item active', activeStyle: {
-	                    color: '#F59B45',
-	                    borderBottom: '4px solid #F59B45',
-	                    textDecoration: 'none'
-	                } },
-	            '   Main Fleet'
-	        ),
-	        React.createElement(
-	            IndexLink,
-	            { to: '/about', className: 'nav-item float-sm-left hidden-xs-down', style: {
-	                    fontSize: '115%',
-	                    color: '#FFFFFF',
-	                    padding: '5px'
-	                }, activeClassName: 'nav-item active', activeStyle: {
-	                    color: '#F59B45',
-	                    borderBottom: '4px solid #F59B45',
-	                    textDecoration: 'none'
-	                } },
-	            '   About'
+	            'span',
+	            { className: 'col-sm-8' },
+	            React.createElement(
+	                IndexLink,
+	                { to: '/' },
+	                React.createElement('img', { src: '/assets/AMMO_no_writing.svg', className: 'float-xs-left', width: '35', height: '35', alt: '' })
+	            ),
+	            React.createElement(
+	                IndexLink,
+	                { to: '/', className: 'nav-item float-sm-left', style: {
+	                        fontSize: '115%',
+	                        color: '#FFFFFF',
+	                        padding: '5px'
+	                    }, activeClassName: 'nav-item active float-sm-left', activeStyle: {
+	                        color: '#F59B45',
+	                        borderBottom: '4px solid #F59B45',
+	                        textDecoration: 'none'
+	                    } },
+	                '   Home'
+	            ),
+	            React.createElement(
+	                IndexLink,
+	                { to: '/scheduler', className: 'nav-item float-sm-left', style: {
+	                        fontSize: '115%',
+	                        color: '#FFFFFF',
+	                        padding: '5px'
+	                    }, activeClassName: 'nav-item active', activeStyle: {
+	                        color: '#F59B45',
+	                        borderBottom: '4px solid #F59B45',
+	                        textDecoration: 'none'
+	                    } },
+	                '   Scheduler'
+	            ),
+	            React.createElement(
+	                IndexLink,
+	                { to: '/floatila', className: 'nav-item float-sm-left', style: {
+	                        fontSize: '115%',
+	                        color: '#FFFFFF',
+	                        padding: '5px'
+	                    }, activeClassName: 'nav-item active', activeStyle: {
+	                        color: '#F59B45',
+	                        borderBottom: '4px solid #F59B45',
+	                        textDecoration: 'none'
+	                    } },
+	                '   Solo Flotilia'
+	            ),
+	            React.createElement(
+	                IndexLink,
+	                { to: '/fleet', className: 'nav-item float-sm-left', style: {
+	                        fontSize: '115%',
+	                        color: '#FFFFFF',
+	                        padding: '5px'
+	                    }, activeClassName: 'nav-item active', activeStyle: {
+	                        color: '#F59B45',
+	                        borderBottom: '4px solid #F59B45',
+	                        textDecoration: 'none'
+	                    } },
+	                '   Main Fleet'
+	            ),
+	            React.createElement(
+	                IndexLink,
+	                { to: '/about', className: 'nav-item float-sm-left', style: {
+	                        fontSize: '115%',
+	                        color: '#FFFFFF',
+	                        padding: '5px'
+	                    }, activeClassName: 'nav-item active', activeStyle: {
+	                        color: '#F59B45',
+	                        borderBottom: '4px solid #F59B45',
+	                        textDecoration: 'none'
+	                    } },
+	                '   About'
+	            )
 	        ),
 	        React.createElement(
 	            'div',
-	            { className: 'nav item float-sm-left hidden-xs-down', style: { color: 'gray', padding: '7px' } },
+	            { className: 'nav item float-sm-left col-sm-2', style: { padding: '7px' } },
 	            '    ',
 	            React.createElement(UTCClock, null)
 	        ),
 	        React.createElement(
-	            IndexLink,
-	            { to: '/profile', className: 'nav-item float-sm-right hidden-xs-down', style: {
-	                    fontSize: '115%',
-	                    color: '#FFFFFF',
-	                    padding: '5px'
-	                }, activeClassName: 'nav-item active', activeStyle: {
-	                    color: '#F59B45',
-	                    borderBottom: '4px solid #F59B45',
-	                    textDecoration: 'none'
-	                } },
-	            'Profile'
-	        ),
-	        React.createElement(
-	            IndexLink,
-	            { to: '/', className: 'nav-item float-xs-left hidden-sm-up', style: {
-	                    fontSize: '115%',
-	                    color: '#FFFFFF',
-	                    padding: '5px'
-	                }, activeClassName: 'nav-item active float-xs-left hidden-sm-up', activeStyle: {
-	                    color: '#F59B45',
-	                    borderBottom: '4px solid #F59B45',
-	                    textDecoration: 'none'
-	                } },
-	            React.createElement('span', { className: 'fa fa-home', 'aria-hidden': 'true' })
-	        ),
-	        React.createElement(
-	            IndexLink,
-	            { to: '/scheduler', className: 'nav-item float-xs-left hidden-sm-up', style: {
-	                    fontSize: '115%',
-	                    color: '#FFFFFF',
-	                    padding: '5px'
-	                }, activeClassName: 'nav-item active', activeStyle: {
-	                    color: '#F59B45',
-	                    borderBottom: '4px solid #F59B45',
-	                    textDecoration: 'none'
-	                } },
-	            React.createElement('span', { className: 'fa fa-calendar', 'aria-hidden': 'true' })
-	        ),
-	        React.createElement(
-	            IndexLink,
-	            { to: '/floatila', className: 'nav-item float-xs-left hidden-sm-up', style: {
-	                    fontSize: '115%',
-	                    color: '#FFFFFF',
-	                    padding: '5px'
-	                }, activeClassName: 'nav-item active', activeStyle: {
-	                    color: '#F59B45',
-	                    borderBottom: '4px solid #F59B45',
-	                    textDecoration: 'none'
-	                } },
-	            React.createElement('span', { className: 'fa fa-user', 'aria-hidden': 'true' })
-	        ),
-	        React.createElement(
-	            IndexLink,
-	            { to: '/fleet', className: 'nav-item float-xs-left hidden-sm-up', style: {
-	                    fontSize: '115%',
-	                    color: '#FFFFFF',
-	                    padding: '5px'
-	                }, activeClassName: 'nav-item active', activeStyle: {
-	                    color: '#F59B45',
-	                    borderBottom: '4px solid #F59B45',
-	                    textDecoration: 'none'
-	                } },
-	            React.createElement('span', { className: 'fa fa-users', 'aria-hidden': 'true' })
-	        ),
-	        React.createElement(
-	            IndexLink,
-	            { to: '/profile', className: 'nav-item float-xs-right hidden-sm-up', style: {
-	                    fontSize: '115%',
-	                    color: '#FFFFFF',
-	                    padding: '5px'
-	                }, activeClassName: 'nav-item active', activeStyle: {
-	                    color: '#F59B45',
-	                    borderBottom: '4px solid #F59B45',
-	                    textDecoration: 'none'
-	                } },
-	            React.createElement('span', { className: 'fa fa-user-circle', 'aria-hidden': 'true' })
+	            'span',
+	            { className: ' col-sm-2' },
+	            React.createElement(
+	                IndexLink,
+	                { to: '/profile', className: 'nav-item float-sm-right hidden-xs-down', style: {
+	                        fontSize: '115%',
+	                        color: '#FFFFFF',
+	                        padding: '5px'
+	                    }, activeClassName: 'nav-item active', activeStyle: {
+	                        color: '#F59B45',
+	                        borderBottom: '4px solid #F59B45',
+	                        textDecoration: 'none'
+	                    } },
+	                'Profile'
+	            )
 	        )
 	    );
 	};
@@ -25626,6 +25570,121 @@
 
 /***/ },
 /* 224 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	var _react = __webpack_require__(1);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	var output;
+
+	var SetIntervalMixin = {
+	  componentWillMount: function componentWillMount() {
+	    this.intervals = [];
+	  },
+	  componentWillUnmount: function componentWillUnmount() {
+	    this.intervals.map(clearInterval);
+	  },
+	  setInterval: function (_setInterval) {
+	    function setInterval() {
+	      return _setInterval.apply(this, arguments);
+	    }
+
+	    setInterval.toString = function () {
+	      return _setInterval.toString();
+	    };
+
+	    return setInterval;
+	  }(function () {
+	    this.intervals.push(setInterval.apply(null, arguments));
+	  })
+	};
+
+	var renderTime = function renderTime() {
+	  var currentTime = new Date();
+	  var h = currentTime.getUTCHours();
+	  var m = currentTime.getUTCMinutes();
+	  var s = currentTime.getUTCSeconds();
+	  var d = currentTime.getUTCDate();
+	  var mo = currentTime.getUTCMonth() + 1;
+	  var y = currentTime.getUTCFullYear();
+
+	  if (h < 10) {
+	    h = '0' + h;
+	  }
+	  if (m < 10) {
+	    m = '0' + m;
+	  }
+	  if (s < 10) {
+	    s = '0' + s;
+	  }
+	  if (d < 10) {
+	    d = '0' + d;
+	  }
+	  if (mo < 10) {
+	    mo = '0' + mo;
+	  }
+
+	  output = {
+	    hours: h,
+	    minutes: m,
+	    seconds: s,
+	    day: d,
+	    month: mo,
+	    year: y
+	  };
+	  return output;
+	};
+
+	var UTCClock = _react2.default.createClass({
+	  displayName: 'UTCClock',
+
+	  mixins: [SetIntervalMixin],
+	  getInitialState: function getInitialState() {
+	    return { time: renderTime() };
+	  },
+	  componentDidMount: function componentDidMount() {
+	    this.setInterval(this.tick, 1000);
+	  },
+	  tick: function tick() {
+	    renderTime();
+	    this.setState({ hours: output.hours, minutes: output.minutes, seconds: output.seconds, day: output.day, month: output.month, year: output.year });
+	  },
+	  render: function render() {
+	    return _react2.default.createElement(
+	      'span',
+	      { className: 'row' },
+	      _react2.default.createElement(
+	        'span',
+	        { id: 'utcTime', className: 'col-sm-6', style: { color: 'white' } },
+	        this.state.hours,
+	        ':',
+	        this.state.minutes,
+	        ':',
+	        this.state.seconds
+	      ),
+	      ' ',
+	      _react2.default.createElement(
+	        'span',
+	        { id: 'utcDate', style: { color: '#F59B45' } },
+	        this.state.day,
+	        '/',
+	        this.state.month,
+	        '/',
+	        this.state.year
+	      )
+	    );
+	  }
+	});
+
+	module.exports = UTCClock;
+
+/***/ },
+/* 225 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -25669,14 +25728,14 @@
 	module.exports = Home;
 
 /***/ },
-/* 225 */
+/* 226 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
 	var React = __webpack_require__(1);
-	var Clock = __webpack_require__(226);
-	var UTCClock = __webpack_require__(227);
+	var Clock = __webpack_require__(227);
+	var UTCClock = __webpack_require__(224);
 
 	var Scheduler = React.createClass({
 	    displayName: 'Scheduler',
@@ -25700,7 +25759,7 @@
 	module.exports = Scheduler;
 
 /***/ },
-/* 226 */
+/* 227 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -25797,94 +25856,6 @@
 	});
 
 	module.exports = Clock;
-
-/***/ },
-/* 227 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-
-	var _react = __webpack_require__(1);
-
-	var _react2 = _interopRequireDefault(_react);
-
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-	var output;
-
-	var SetIntervalMixin = {
-	  componentWillMount: function componentWillMount() {
-	    this.intervals = [];
-	  },
-	  componentWillUnmount: function componentWillUnmount() {
-	    this.intervals.map(clearInterval);
-	  },
-	  setInterval: function (_setInterval) {
-	    function setInterval() {
-	      return _setInterval.apply(this, arguments);
-	    }
-
-	    setInterval.toString = function () {
-	      return _setInterval.toString();
-	    };
-
-	    return setInterval;
-	  }(function () {
-	    this.intervals.push(setInterval.apply(null, arguments));
-	  })
-	};
-
-	var renderTime = function renderTime() {
-	  var currentTime = new Date();
-	  var h = currentTime.getUTCHours();
-	  var m = currentTime.getUTCMinutes();
-	  var s = currentTime.getUTCSeconds();
-
-	  if (h < 10) {
-	    h = '0' + h;
-	  }
-	  if (m < 10) {
-	    m = '0' + m;
-	  }
-	  if (s < 10) {
-	    s = '0' + s;
-	  }
-	  output = {
-	    hours: h,
-	    minutes: m,
-	    seconds: s
-	  };
-	  return output;
-	};
-
-	var UTCClock = _react2.default.createClass({
-	  displayName: 'UTCClock',
-
-	  mixins: [SetIntervalMixin],
-	  getInitialState: function getInitialState() {
-	    return { time: renderTime() };
-	  },
-	  componentDidMount: function componentDidMount() {
-	    this.setInterval(this.tick, 1000);
-	  },
-	  tick: function tick() {
-	    renderTime();
-	    this.setState({ hours: output.hours, minutes: output.minutes, seconds: output.seconds });
-	  },
-	  render: function render() {
-	    return _react2.default.createElement(
-	      'span',
-	      null,
-	      this.state.hours,
-	      ':',
-	      this.state.minutes,
-	      ':',
-	      this.state.seconds
-	    );
-	  }
-	});
-
-	module.exports = UTCClock;
 
 /***/ },
 /* 228 */
